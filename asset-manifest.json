@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/color-todo-list/static/css/main.afa72af5.css",
+    "main.js": "/color-todo-list/static/js/main.a7d78009.js",
+    "index.html": "/color-todo-list/index.html",
+    "main.afa72af5.css.map": "/color-todo-list/static/css/main.afa72af5.css.map",
+    "main.a7d78009.js.map": "/color-todo-list/static/js/main.a7d78009.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afa72af5.css",
+    "static/js/main.a7d78009.js"
+  ]
+}
