@@ -1,0 +1,44 @@
+.todo-detail {
+  overflow-y: scroll;
+  padding: 20px;
+  width: 40%;
+  min-height: 50%;
+  max-height: 100%;
+  position: absolute;
+  right: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease-in-out;
+}
+
+.toggle-translate {
+  transform: translateX(105%);
+}
+
+.todo-detail__title-box {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 8px 15px 5px;
+  font-size: 18px;
+}
+
+.todo-detail__title-box .title {
+  width: 80%;
+}
+
+.todo-detail__title-box .x-mark {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.todo-detail__title-box .x-mark:hover {
+  opacity: 1;
+}
+
+.todo-detail .content {
+  white-space: pre-wrap;
+}

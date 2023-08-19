@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import TodoList from "./TodoList";
+import Header1Memo from "./Header";
+import TodoArea from "./TodoArea";
+
+import { useState } from "react";
+import TodoDetail from "./TodoDetail";
 
 function App() {
+  const [conveyToApp, setConveyToApp] = useState([]);
+  const [conveyToDetail, setConveyToDetail] = useState();
+  console.log("app");
+  console.log(conveyToApp);
+  console.log(conveyToDetail);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="root__main">
+      <Header1Memo />
+      <div className="main-content">
+        <TodoList conveyToApp={conveyToApp} setConveyToApp={setConveyToApp} />
+        <TodoArea
+          conveyToApp={conveyToApp}
+          setConveyToApp={setConveyToApp}
+          setConveyToDetail={setConveyToDetail}
+        />
+        <TodoDetail
+          conveyToDetail={conveyToDetail}
+          setConveyToDetail={setConveyToDetail}
+        />
+      </div>
+    </main>
   );
 }
 

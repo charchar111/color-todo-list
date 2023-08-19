@@ -1,0 +1,106 @@
+.todolist {
+  width: 50%;
+}
+.todolist,
+.todolist__todo-form {
+  height: 100%;
+}
+
+.todolist__todo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.todolist__todo-row1 {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.todo-form__input {
+  all: unset;
+  background-color: white;
+
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 1px 8px 5px;
+  color: black;
+}
+
+.todo-form__input-default {
+  border: 5px solid rgb(192, 206, 133);
+}
+
+.todo-form__input-yellow {
+  border: 5px solid rgb(192, 206, 133);
+}
+
+.todo-form__input-blue {
+  border: 5px solid rgb(115, 115, 172);
+}
+
+.todo-form__input-red {
+  border: 5px solid rgb(161, 99, 99);
+}
+
+.todo-form__input-puple {
+  border: 5px solid rgb(167, 125, 188);
+}
+
+.todo-form__color-select {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-form__color-box-yellow {
+  background-color: rgb(192, 206, 133);
+}
+
+.todo-form__color-box-blue {
+  background-color: rgb(115, 115, 172);
+}
+
+.todo-form__color-box-red {
+  background-color: rgb(161, 99, 99);
+}
+
+.todo-form__color-box-puple {
+  background-color: rgb(167, 125, 188);
+}
+
+.todo-form__textarea {
+  width: 100%;
+  min-height: 20%;
+  resize: none;
+}
+
+.todo-form__color-box {
+  cursor: pointer;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(159, 159, 159);
+  left: calc(100% + 10px);
+}
+
+.color__yellow {
+  background-color: rgb(195, 189, 82);
+}
+
+.color__blue {
+  background-color: rgb(115, 115, 172);
+}
+
+.color__puple {
+  background-color: rgb(151, 75, 189);
+}
+
+.color__red {
+  background-color: rgb(186, 69, 69);
+}
